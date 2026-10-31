@@ -1,0 +1,241 @@
+/* ==========================================
+   CONTROLLER SCREEN - PROFESSIONAL STUDIO THEME
+   ========================================== */
+
+.controller-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: #07090e; /* Deep obsidian background */
+  color: #f1f5f9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.controller-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ctrl-card {
+  background-color: #0d111a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.2s ease;
+}
+
+.ctrl-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.card-title {
+  margin: 0 0 8px 0; 
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e2e8f0;
+  text-transform: uppercase;
+}
+
+.card-sub {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.flex-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.text-input {
+  flex: 1;
+  min-width: 160px;
+  background-color: #04060a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: #f8fafc;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.text-input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.15);
+}
+
+/* Professional Buttons */
+.btn-primary {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0369a1;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background-color: #131c2e;
+  color: #94a3b8;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: 1px solid #1e293b;
+  color: #64748b;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+/* Switcher Action Grids */
+.btn-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.action-btn {
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: filter 0.2s ease, transform 0.1s ease;
+}
+
+.action-btn:hover {
+  filter: brightness(1.1);
+}
+
+.action-btn:active {
+  transform: scale(0.97);
+}
+
+.action-btn.start { background: linear-gradient(135deg, #16a34a, #15803d); }
+.action-btn.pause { background: linear-gradient(135deg, #d97706, #b45309); }
+.action-btn.reset { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+
+.preset-btn {
+  background-color: #131c2e;
+  border: 1px solid #1e293b;
+  color: #38bdf8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preset-btn:hover {
+  background-color: #1e293b;
+  border-color: #0284c7;
+}
+
+.preset-btn.alert {
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+.preset-btn.alert:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Custom Scrollbar for Schedule Sidebar Textarea */
+textarea.text-input::-webkit-scrollbar {
+  width: 6px;
+}
+textarea.text-input::-webkit-scrollbar-track {
+  background: #04060a;
+  border-radius: 4px;
+}
+textarea.text-input::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+textarea.text-input::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT SWITCHING (PORTRAIT / LANDSCAPE)
+   ========================================== */
+
+.controller-main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* On Widescreen / Landscape monitors (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .controller-wrapper {
+    padding: 28px 32px;
+  }
+  
+  .controller-main-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .schedule-sidebar {
+    position: sticky;
+    top: 28px;
+    height: calc(100vh - 56px);
+    min-height: 520px;
+  }
+}
